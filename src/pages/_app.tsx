@@ -6,12 +6,13 @@ import '../styles/globals.scss';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className={'l-wrapper'}>
-      <header className={'l-header'}>
-        <Header />
-      </header>
+      <Header />
       <main className={'l-main'}>
         <Component {...pageProps} />
       </main>
+      <footer className={'l-footer'}>
+        <div></div>
+      </footer>
     </div>
   );
 }

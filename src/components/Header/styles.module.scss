@@ -1,10 +1,19 @@
 .headerContainer {
-  height: 5rem;
-  border-bottom: 1px solid var(--gray-800);
+  grid-area: header;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: var(--header-height);
+
+  background: var(--gray-800);
+  border-bottom: 1px solid var(--gray-300);
 }
 
 .headerContent {
-  max-width: 1120px;
+  max-width: var(--max-width);
   height: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -21,7 +30,7 @@
       position: relative;
       padding: 0 0.5rem;
       height: 100%;
-      line-height: 5rem;
+      line-height: var(--header-height);
       color: var(--gray-300);
 
       transition: color 0.2s;
