@@ -10,6 +10,8 @@
 
   background: var(--gray-800);
   border-bottom: 1px solid var(--gray-300);
+
+  z-index: 100;
 }
 
 .headerContent {
@@ -53,7 +55,7 @@
           border-radius: 3px 3px 0 0;
           width: 100%;
           position: absolute;
-          bottom: 1px;
+          bottom: 0;
           left: 0;
           background: var(--yellow-500);
         }
